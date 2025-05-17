@@ -8,44 +8,37 @@ This system was developed to address increasing incidents of student misbehavior
 
 ## 📁 Project Structure
 
-
- SmartCampusFaceRecognition/
- │
- ├── main.py                      # 🔧 Main GUI application using CustomTkinter
- ├── database.py                  # 🔗 MongoDB operations (add, get, update, delete students and admins)
- ├── face_recognition.py          # 🤖 Handles face detection, training, recognition, misbehavior logging
- ├── auth.py                      # 🔐 Admin authentication logic
- ├── requirements.txt             # 📦 Required Python packages
- ├── main.spec                    # 🐍 PyInstaller build spec for generating EXE
- ├── students.db                  # 🗃 Optional local DB file (if used)
- │
- ├── misbehaviour_log.xlsx        # 📄 Excel file storing logged complaints
- ├── assets/                      # 🎨 UI background images and assets
- ├── dataset/                     # 🧠 Trained LBPH face recognition model (trainer.yml)
- ├── haarcascade/                 # 👁 Face detection XML (Haar Cascade)
- │   └── haarcascade_frontalface_default.xml
- ├── images/                      # 🖼 Captured face images of students 
-
+```
+SmartCampusFaceRecognition/
+|
+├── main.py                   # 🔧 Main GUI application using CustomTkinter
+├── database.py               # 🔗 MongoDB operations (add, get, update, delete students and admins)
+├── face_recognition.py       # 🤖 Handles face detection, training, recognition, misbehavior logging
+├── auth.py                   # 🔐 Admin authentication logic
+├── requirements.txt          # 📆 Required Python packages
+├── main.spec                 # 🐍 PyInstaller build spec for generating EXE
+├── students.db               # 🗓 Optional local DB file (if used)
+|
+├── misbehaviour_log.xlsx     # 📄 Excel file storing logged complaints
+├── assets/                   # 🎨 UI background images and assets
+├── dataset/                  # 🧠 Trained LBPH face recognition model (trainer.yml)
+├── haarcascade/              # 👁 Face detection XML (Haar Cascade)
+│   └── haarcascade_frontalface_default.xml
+├── images/                   # 🖼 Captured face images of students
+```
 
 ---
 
 ## ✨ Features
 
-✅ Student Registration with passport-size photo, roll number & contact
-
-✅ Face Training using OpenCV's LBPH recognizer
-
-✅ Real-time Face Recognition from webcam
-
-✅ Misbehavior Logging with date, time, and reason
-
-✅ View Logs & Misbehavior History per student
-
-✅ Admin Login & Registration System
-
-✅ Export all student data to CSV
-
-✅ Stylish CustomTkinter GUI interface
+* ✅ Student Registration with passport-size photo, roll number & contact
+* ✅ Face Training using OpenCV's LBPH recognizer
+* ✅ Real-time Face Recognition from webcam
+* ✅ Misbehavior Logging with date, time, and reason
+* ✅ View Logs & Misbehavior History per student
+* ✅ Admin Login & Registration System
+* ✅ Export all student data to CSV
+* ✅ Stylish CustomTkinter GUI interface
 
 ---
 
@@ -59,33 +52,11 @@ This system was developed to address increasing incidents of student misbehavior
    * Face is matched using OpenCV’s LBPH recognizer
    * If recognized, details are shown
    * Admin can optionally file a complaint
-5. Complaint is stored in misbehaviour_log.xlsx
+5. Complaint is stored in `misbehaviour_log.xlsx`
 
 ---
 
-## 🛠 Setup Instructions
-
-### 1. Install Required Packages
-
-bash
-pip install -r requirements.txt
-
-
-Make sure to install OpenCV with contrib:
-
-bash
-pip install opencv-contrib-python
-
-
-### 2. Run the Application
-
-bash
-python main.py
-
-
----
-
-## 🔁 Recognition & Logging Flow
+## 🔄 Recognition & Logging Flow
 
 1. 🧑 Face detected using Haar Cascade
 2. 🧠 Compared with trained LBPH model
@@ -99,7 +70,7 @@ python main.py
 
 * Haar Cascade for face detection (frontal)
 * LBPH for recognition and ID assignment
-* Model trained and saved to dataset/trainer.yml
+* Model trained and saved to `dataset/trainer.yml`
 
 ---
 
@@ -139,13 +110,13 @@ This tool helps teachers track misbehaving students quickly and easily by:
 
 ## 👩‍💻 Author & License
 
-*Author*: Pooja Jain
+**Author**: Pooja Jain
 📧 Email: [akashsharmapersonal12186@gmail.com](mailto:akashsharmapersonal12186@gmail.com)
 
-*License*: MIT License © 2025
+**License**: MIT License © 2025
 
 ---
 
-## 🙋‍♂ Support
+## ❓ Support
 
 If you find this helpful or need a custom version, feel free to contact me via email.
