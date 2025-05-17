@@ -24,7 +24,7 @@ SmartCampusFaceRecognition/
 ├── dataset/                  # 🧠 Trained LBPH face recognition model (trainer.yml)
 ├── haarcascade/              # 👁 Face detection XML (Haar Cascade)
 │   └── haarcascade_frontalface_default.xml
-├── images/                   # 🖼 Captured face images of students
+└── images/                   # 🖼 Captured face images of students
 ```
 
 ---
