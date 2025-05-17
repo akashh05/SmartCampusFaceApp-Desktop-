@@ -9,22 +9,22 @@ This system was developed to address increasing incidents of student misbehavior
 ## 📁 Project Structure
 
 
-SmartCampusFaceRecognition/
-│
-├── main.py                      # 🔧 Main GUI application using CustomTkinter
-├── database.py                  # 🔗 MongoDB operations (add, get, update, delete students and admins)
-├── face_recognition.py          # 🤖 Handles face detection, training, recognition, misbehavior logging
-├── auth.py                      # 🔐 Admin authentication logic
-├── requirements.txt             # 📦 Required Python packages
-├── main.spec                    # 🐍 PyInstaller build spec for generating EXE
-├── students.db                  # 🗃 Optional local DB file (if used)
-│
-├── misbehaviour_log.xlsx        # 📄 Excel file storing logged complaints
-├── assets/                      # 🎨 UI background images and assets
-├── dataset/                     # 🧠 Trained LBPH face recognition model (trainer.yml)
-├── haarcascade/                 # 👁 Face detection XML (Haar Cascade)
-│   └── haarcascade_frontalface_default.xml
-├── images/                      # 🖼 Captured face images of students
+ SmartCampusFaceRecognition/
+ │
+ ├── main.py                      # 🔧 Main GUI application using CustomTkinter
+ ├── database.py                  # 🔗 MongoDB operations (add, get, update, delete students and admins)
+ ├── face_recognition.py          # 🤖 Handles face detection, training, recognition, misbehavior logging
+ ├── auth.py                      # 🔐 Admin authentication logic
+ ├── requirements.txt             # 📦 Required Python packages
+ ├── main.spec                    # 🐍 PyInstaller build spec for generating EXE
+ ├── students.db                  # 🗃 Optional local DB file (if used)
+ │
+ ├── misbehaviour_log.xlsx        # 📄 Excel file storing logged complaints
+ ├── assets/                      # 🎨 UI background images and assets
+ ├── dataset/                     # 🧠 Trained LBPH face recognition model (trainer.yml)
+ ├── haarcascade/                 # 👁 Face detection XML (Haar Cascade)
+ │   └── haarcascade_frontalface_default.xml
+ ├── images/                      # 🖼 Captured face images of students 
 
 
 ---
